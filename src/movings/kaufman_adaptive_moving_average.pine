@@ -13,7 +13,7 @@ kama(src, length, fastLength, slowLength) =>
 	volatility = sum(abs(src - nz(src[1])), length)
 
 	// Efficiency Ratio
-	ER = volatility != 0
+	ER = volatility != 0 //line 16: syntax error at input 'volatility'
 		 ? change / volatility
 		 0
 
